@@ -1,0 +1,290 @@
+<resources>
+
+    <!-- various text -->
+    <string name="app_name">T-UI</string>
+    <string name="version_label">Version:</string>
+    <string name="location_off">Turn on GPS or network location</string>
+    <string name="share_label">Share</string>
+    <string name="output_about">Francesco Andreuzzi (Italy)\n\t-> Programmer
+        \n\nLuke Winward (USA)\n\t-> Idea and design
+        \n\nAlexander King (Australia)\n\t-> t-ui theme website and db management</string>
+    <string name="output_refresh">Refresh: apps, alias, music, contacts</string>
+    <string name="output_rate">Thank you!</string>
+    <string name="start_notification">T-UI started</string>
+    <string name="tui_running">T-UI is running</string>
+    <string name="anr">t-ui is having some issues. Please send to the developer your file crash.txt in the "t-ui" folder</string>
+    <string name="admin_permission">Lock the screen on double tap</string>
+
+    <!-- theme -->
+    <string name="theme_not_found">Theme not found</string>
+    <string name="theme_invalid">Invalid theme</string>
+    <string name="theme_old_not_found">You don\'t have an old theme</string>
+    <string name="theme_reverted">Reverted to the previous theme</string>
+
+    <!-- files -->
+    <string name="output_error">An unknown error has occurred</string>
+    <string name="output_isdirectory">This is a directory</string>
+    <string name="output_filenotfound">File not found</string>
+
+    <!-- notifications -->
+    <string name="notification_reader">T-UI notification reader</string>
+    <string name="no_notification_access">Unfortunately t-ui can\'t redirect you to the \"Notification access\" page of your system settings</string>
+
+    <!-- helps texts -->
+    <string name="firsthelp_text">First time with t-ui? Use the command \"tutorial\" or \"help\"</string>
+    <string name="permissions_toast">You have to grant Storage permission</string>
+    <string name="output_usedefapp">You can use "apps -default_app" instead</string>
+
+    <!-- hints -->
+    <string name="hint_donate">\nDo you like my work?\nIf yes, rate t-ui on Play Store (cmd: $ rate) or offer me a coffee (cmd: $ donate). Thank you!</string>
+    <string name="hint_twitter">Did you know? t-ui is on Twitter. You can have a look with the cmd \"$ tui -twitter\"</string>
+    <string name="hint_telegram">Did you know? There\'s a Telegram group with many enthusiastic users, where you can discuss, share and chat with the developer.\nJust use the cmd \"$ tui -telegram\"</string>
+    <string name="hint_googlep">Did you know? Our official Google+ community is full of tips, experimental apks and discussions.\nYou can have a look with the cmd \"$ tui -googlep\"</string>
+    <string name="hint_tutorial">Did you read the tutorial? If you don\'t remember how to view it, the cmd is \"$ tutorial\"</string>
+    <string name="hint_theme">Did you know that you can easily switch your theme? Have a look at the cmd \"$ theme\"</string>
+    <string name="hint_theme2">Did you know? You can create your custom theme and share it to other users. Have a look at the cmd \"$ theme -create\"</string>
+    <string name="hint_help">Are you having any doubts about a command? Just use the cmd \"$ help cmdName\"</string>
+    <string name="hint_music">Did you know? You can listen your music without launching other apps but t-ui. Have a look at the cmd \"$ music\"</string>
+    <string name="hint_appgroups">Did you know? t-ui 6.4 introduced App Groups, a feature that let\'s you customize your app suggestions, creating different categories.\nYou can get more details with the cmd
+        \"$ apps -tutorial\"</string>
+    <string name="hint_notifications">Did you know? You can see your notifications directly from t-ui.\nIf you\'re interested, have a look at the tutorial: \"$ notifications -tutorial\"</string>
+    <string name="hint_clear">Are you sick of clearing your screen? Have a look at the options \"clear_after_cmds\", \"clear_after_seconds\" and \"maxlines\"</string>
+    <string name="hint_wallpaper">Do you want to use your wallpaper as t-ui background? Use the cmd: \"$ config -set system_wallpaper true\"</string>
+    <string name="hint_config">Are you having doubts about any config option? Use the cmd \"$ config -tutorial\" and look for that option inside the table</string>
+    <string name="hint_alias">Did you know that t-ui supports aliases? It also supports parameterized aliases.\nFor more info, use the cmd \"$ alias -tutorial\"</string>
+    <string name="hint_musicdisable">Do you want to make t-ui lighter? Use the cmd \"$ config -set enable_music false\" to disable the music player and save resources</string>
+
+    <string name="hint_disable">You can disable this messages with the cmd \"$ config -set show_hints false\"</string>
+
+    <!-- apps -->
+    <string name="output_appnotfound">Application not found</string>
+    <string name="activity_not_found">Activity not found</string>
+    <string name="app_installed">App installed:</string>
+    <string name="app_uninstalled">App uninstalled:</string>
+
+    <!-- pending operation -->
+    <string name="calling">Calling:</string>
+    <string name="restarting">t-ui will be closed in some seconds. Click the home button to restart it</string>
+
+    <!-- various errors -->
+    <string name="output_nopermissions">You didn\'t grant the permission</string>
+    <string name="output_waitingpermission">Waiting permission</string>
+    <string name="output_problemcamera">There was a problem while connecting to your device camera</string>
+    <string name="output_numberformat">Wrong number format</string>
+    <string name="output_invalidarg">Invalid argument</string>
+    <string name="output_lessarg">Less arguments than expected</string>
+    <string name="invalid_integer">Invalid integer</string>
+    <string name="output_nothing_found">Nothing was found</string>
+    <string name="output_xmlproblem1">There was an XML problem with your file</string>
+    <string name="output_xmlproblem2">, t-ui will use default values.\nFix or delete the file to recover your options</string>
+    <string name="output_errorlabel">Error:</string>
+    <string name="output_invalidcolor">Invalid color</string>
+    <string name="output_groupnotfound">Group not found</string>
+    <string name="output_groupexists">This group already exists</string>
+    <string name="output_groupspace">Spaces are not allowed inside group names</string>
+
+    <!-- alias -->
+    <string name="output_aliasnotfound">Alias not found:</string>
+    <string name="output_problemaddingalias">There was a problem with your alias</string>
+    <string name="output_notaddingalias1">The name of your alias:</string>
+    <string name="output_notaddingalias2">is equal to its value. This may lead to bad behaviors, so it has been excluded. You should edit the name to use it</string>
+    <string name="output_notaddingalias3">is equal to the part of its value before the first space (i.e. aliasName=play ; aliasValue = play store). This may lead to crashes and freezes, so it has been excluded. You should edit the name to use it</string>
+
+    <!-- tuixt -->
+    <string name="help_tuixt_help">Print the list of commands, or info about a command
+        \nUsage:
+        \nhelp [command]
+        \n\nExample:
+        \nhelp exit
+    </string>
+    <string name="help_tuixt_exit">Exit from tuixt</string>
+    <string name="help_tuixt_save">Save changes</string>
+    <string name="tuixt_back_pressed">You pressed back key</string>
+    <string name="tuixt_saved">Saved</string>
+    <string name="tuixt_reading">Reading</string>
+    <string name="tuixt_label">TUIXT</string>
+    <string name="tuixt_error">This file is too big, consider opening it with an other text editor</string>
+
+    <!-- phone -->
+    <string name="output_wifi">WiFi active:</string>
+    <string name="output_data">Mobile Data active:</string>
+    <string name="output_bluetooth">Bluetooth active:</string>
+    <string name="output_airplane">Airplane mode active:</string>
+
+    <!-- music -->
+    <string name="output_playing">Playing:</string>
+    <string name="output_stopped">Player stopped</string>
+    <string name="output_songnotfound">Song not found</string>
+    <string name="output_musicdisabled">enable_music is false!</string>
+
+    <!-- command/args -->
+    <string name="output_commandnotfound">Command not found.\nTry to use \">>help\" or \">>tutorial\"</string>
+    <string name="output_invalid_param">Invalid option:</string>
+
+    <!-- flash -->
+    <string name="output_flashon">Flashlight ON</string>
+    <string name="output_flashoff">Flashlight OFF</string>
+    <string name="output_flashlightnotavailable">Your device doesn\'t support flashlight</string>
+
+    <!-- status -->
+    <string name="battery_charge">Battery charge:</string>
+    <string name="mobile_data">Mobile data:</string>
+    <string name="wifi">WiFi:</string>
+
+    <!-- contacts -->
+    <string name="sms_hint">write your SMS or nothing to cancel</string>
+    <string name="output_numbernotfound">Contact not found</string>
+    <string name="output_smsnotsent">SMS not sent</string>
+    <string name="output_smssent">SMS sent</string>
+
+
+    <string name="help_airplane">Toggle airplane mode</string>
+    <string name="help_alias">Manage your aliases
+        \n\nUsage:
+        \n-add [aliasName] [alias content] -> add a new alias
+        \n-rm [aliasName] -> remove an existing alias
+        \n-ls -> list your aliases
+        \n-file -> open alias.xml
+    </string>
+    <string name="help_apps">Manage your apps
+        \n\nUsage:
+        \n-ls -> list your apps
+        \n-lsh -> list your hidden apps
+        \n-show [appName] -> re-show an hidden app
+        \n-hide [appName] -> hide an app
+        \n-l [appName] -> show details about an app
+        \n-ps [appName] -> show Google Play Store page for an app
+        \n-st [appName] -> show Settings details for an app
+        \n-default_app [index] [appName or most_used or null] -> set the default_app at the specified index
+        \n-frc [appName] -> force t-ui to launch an app
+        \n-file -> open apps.xml
+        \n-refresh [appName] -> refresh the \"launched_times\" value of the given app to 0
+        \n-mkgp [groupName] -> create a new group with the given name
+        \n-rmgp [groupName] -> delete the group with the given name
+        \n-gpcolor [groupName] [color] -> set the color for the given group
+        \n-addtogp [groupName] [appName] -> add the given app to the given group
+        \n-rmfromgp [groupName] [appName] -> remove the given app from the given group
+        \n-lsgp [OPTIONAL: groupName] -> list your groups, or list the content of the given group
+    </string>
+    <string name="help_bluetooth">Toggle bluetooth</string>
+    <string name="help_clear">Clear the screen</string>
+    <string name="help_calc" formatted="false">Perform basic operations (+ - * / % ^ sqrt)
+        \nExample:
+        \n\n>>calc 4+2-5
+        \n1
+        \n\n>>calc 2 ^ (2*2)
+        \n16
+        \n\n>>calc sqrt25
+        \n5
+    </string>
+    <string name="help_call">Make a call
+        \nUsage: call [number] OR [contactName]
+    </string>
+    <string name="help_config">Usage:
+        \n-set [option] [value] -> set the value of an option
+        \n-file [file] -> open a config file
+        \n-get [option] -> get the value of an option
+        \n-reset [option] -> reset the value of an option
+        \n-apply [file] -> move a file to the t-ui directory
+    </string>
+    <string name="help_data">Toggle mobile data</string>
+    <string name="help_devutils">Usage:
+        \nnotify [title] [text]</string>
+    <string name="help_donate">Offer a coffee to the developer (PayPal only)</string>
+    <string name="help_flash">Toggle the flashlight</string>
+    <string name="help_help">Print a list of the available commands, or info about a command
+        \nUsage:
+        \n>>help [command]
+    </string>
+    <string name="help_music">Usage:
+        \n-next -> play the next song in the queue
+        \n-previous -> play the previous song in the queue
+        \n-play -> play/pause
+        \n-stop -> stop the player
+        \n-ls -> list your tracks
+        \n-select [song] -> play the selected song
+        \n-info -> get info about the current song
+        \n-seekto [seconds] -> seek to the selected part of the current song</string>
+    <string name="help_rate">Leave a feedback on the Play Store page</string>
+    <string name="help_refresh">Refresh apps, alias, music, contacts</string>
+    <string name="help_restart">Restart t-ui and load modified values</string>
+    <string name="help_search">Search something somewhere
+        \n\nUsage:
+        \n-gg [search this...] -> Google Search
+        \n-ps [search this...] -> Google Play Store
+        \n-file [search this...] -> Files
+        \n-yt [search this...] -> YouTube
+        \n-dd [search this...] -> DuckDuck Go
+    </string>
+    <string name="help_share">Share a file
+        \nUsage:
+        \n>>share [pathToFile]
+    </string>
+    <string name="help_shellcommands">Print the commands in /system/bin and /system/xbin</string>
+    <string name="help_status">Get info about battery charge, wifi status and mobile data</string>
+    <string name="help_theme">Usage:
+        \n-apply [theme] -> apply the selected theme (case sensitive). require internet connection. may take some seconds
+        \n-view -> view the available themes
+        \n-create -> create a new theme
+        \n-old -> re-apply the theme that was replaced by the current one</string>
+    <string name="help_time">Print the current time with the given format
+        \n\nUsage:
+        \n$ time [index] (index means the index of the desired time_format</string>
+    <string name="help_tuixt">Open the text editor.
+        \nUsage:
+        \n>>tuixt [textFile]
+    </string>
+    <string name="help_tui">
+        Usage:
+        \n-rm -> remove t-ui
+        \n-about -> show info about the developer and the current version</string>
+        \n-reset -> removes the t-ui folder and resets default settings (restart required)
+        \n-twitter -> show t-ui Twitter page
+        \n-googlep -> show the community on Google+
+        \n-telegram -> open the official Telegram group
+        \n-folder -> print the path of the t-ui folder
+    <string name="help_tutorial">Open the tutorial page on GitHub</string>
+    <string name="help_uninstall">Uninstall an application
+        \nUsage:
+        \n>>uninstall [appName]
+    </string>
+    <string name="help_wifi">Toggle wifi</string>
+    <string name="help_sms">Send an SMS.
+        \nUsage:
+        \n>>sms [contactName] OR [number]
+        \n>>[text]
+    </string>
+    <string name="help_vibrate">Vibrate your device.
+        \nUsage:
+        \n>>vibrate [milliseconds]</string>
+    <string name="help_beep">Emit a beep.
+        \nUsage:
+        \n>>beep</string>
+    <string name="help_notifications">Manage your notifications.
+        \n\nUsage:
+        \n-inc [appName] -> include an application
+        \n-exc [appName] -> exclude an application
+        \n-clr [color] [appName] -> set the color to be used for the application
+        \n-file -> open notifications.xml
+        \n-title_filter [ID] [regex] -> set a filter over notifications title with a given ID
+        \n-text_filter [ID] [regex] -> set a filter over notifications text with a given ID
+        \n-apply_filter [ID] [appName] -> apply a filter (or a group of filters) to a single application
+        \n-access -> show the system settings page dedicated to the Notification Access</string>
+    <string name="help_location">Show the current location</string>
+    <string name="help_cntcts">Manage your contacts.
+        \n\nUsage:
+        \n-ls -> list your contacts
+        \n-l [contactName] -> show details about a contact
+        \n-add -> create a new contact
+        \n-edit [contactName] -> edit an existing contact
+        \n-rm [contactName] -> remove a contact</string>
+    <string name="help_exit">Close T-UI and reset launcher preferences</string>
+
+    <!-- linux -->
+    <string name="help_ctrlc">Interrupt the current shell process and create a new one</string>
+    <string name="help_open">Open a file
+        \nUsage:
+        \n>>open [pathToFile]
+    </string>
+
+</resources>
